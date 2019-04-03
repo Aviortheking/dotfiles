@@ -6,6 +6,7 @@ C_BLUE="\033[38;5;12m"
 C_GREEN="\033[38;5;2m"
 
 path="$(dirname $0)"
+nanorc="$HOME/.nanorc"
 
 ###
 # save config
@@ -13,7 +14,7 @@ path="$(dirname $0)"
 function save {
 	echo -en "\rSaving nano config [${C_BLUE}¤${NO_FORMAT}]"
 
-	cp ~/.nanorc $path/
+	cp $nanorc $path/
 
 	echo -en "\rSaving nano config [${C_GREEN}+${NO_FORMAT}]\n"
 }
@@ -24,7 +25,7 @@ function save {
 function load {
 	echo -en "\rLoading nano config [${C_BLUE}¤${NO_FORMAT}]"
 
-	cp $path/.nanorc ~/
+	cp $path/.nanorc $nanorc
 
 	echo -en "\rLoading nano config [${C_GREEN}+${NO_FORMAT}]\n"
 }
