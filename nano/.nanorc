@@ -1,1 +1,9 @@
 set linenumbers
+set autoindent
+set morespace
+set nohelp
+set mouse
+set softwrap
+set constantshow
+
+include /usr/share/nano/*.nanorc
