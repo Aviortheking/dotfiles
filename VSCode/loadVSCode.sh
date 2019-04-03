@@ -15,7 +15,7 @@ else
 folder=$1
 fi
 
-echo -en "\r${C_WHITE}Loading VSCode[${C_BLUE}¤${C_WHITE}]${NO_FORMAT}"
+echo -en "\r$Loading VSCode[${C_BLUE}¤${NO_FORMAT}]"
 
 ###
 # Install extensions
@@ -30,7 +30,10 @@ done
 ###
 conf="~/.config/${folder}/User"
 
+if [ ! -d "$conf/snippets/" ]; then
+	mkdir -p "$conf/snippets/"
+fi
 cp $path/settings.json ${conf}/settings.json
 cp -r $path/snippets/ ${conf}/snippets/
 
-echo -en "\r${C_WHITE}Loading VSCode[${C_GREEN}+${C_WHITE}]${NO_FORMAT}"
+echo -en "\r$Loading VSCode[${C_GREEN}+${NO_FORMAT}]"
