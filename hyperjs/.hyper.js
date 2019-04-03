@@ -90,11 +90,11 @@ module.exports = {
       lightCyan: '#68FDFE',
       lightWhite: '#FFFFFF',
     },
-    
+
     MaterialTheme: {
       theme: 'Darker'
     },
-    
+
     hyperline: {
       plugins: [
         "hostname",
