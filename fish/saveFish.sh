@@ -7,7 +7,7 @@ C_GREEN="\033[38;5;2m"
 
 path="$(dirname $0)"
 
-echo -en "\r${C_WHITE}Saving fish functions [${C_BLUE}¤${C_WHITE}]${NO_FORMAT}"
+echo -en "\rSaving fish functions [${C_BLUE}¤${NO_FORMAT}]"
 
 ###
 # save config
@@ -17,4 +17,4 @@ mkdir "${path}/functions"
 fi
 cp ~/.config/fish/functions/* $path/functions
 
-echo -en "\r${C_WHITE}Saving fish functions [${C_GREEN}+${C_WHITE}]${NO_FORMAT}\n"
+echo -en "\rSaving fish functions [${C_GREEN}+${NO_FORMAT}]\n"
