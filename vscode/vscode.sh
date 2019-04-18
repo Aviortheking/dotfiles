@@ -84,7 +84,7 @@ function save {
 
 	$vscode --list-extensions > $path/$extensionsFile
 
-	echo -e "Saving VSCode Extensions [${C_GREEN}+${NO_FORMAT}]"
+	echo -e "\rSaving VSCode Extensions [${C_GREEN}+${NO_FORMAT}]"
 	echo -en "Saving VSCode Settings [${C_BLUE}¤${NO_FORMAT}]"
 
 	cp $conf/settings.json $path/settings.json
@@ -95,7 +95,7 @@ function save {
 			mkdir "$path/snippets"
 		fi
 
-		cp $conf/snippets/* $path/snippets/
+		cp $conf/snippets/*.json $path/snippets/
 	fi
 
 	echo -e "\rSaving VSCode Settings [${C_GREEN}+${NO_FORMAT}]\n"
@@ -121,7 +121,7 @@ function load {
 			mkdir -p "$path/snippets/"
 		fi
 
-		cp -r $path/snippets/ $conf/snippets/
+		cp $path/snippets/* $conf/snippets/
 	fi
 
 	echo -e "\rLoading VSCode Settings [${C_GREEN}+${NO_FORMAT}]\n"
