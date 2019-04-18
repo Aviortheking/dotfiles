@@ -33,7 +33,9 @@
     "emmet.includeLanguages": {
         "njk": "html",
         "svg": "html",
-        "twig": "html"
+        "twig": "html",
+        "html.twig": "html",
+        "xml.twig": "xml"
     },
     "explorer.sortOrder": "type",
     "extensions.closeExtensionDetailsOnViewChange": true,
@@ -164,5 +166,10 @@
     "yaml.format.enable": true,
     "yaml.format.singleQuote": true,
     "zenMode.centerLayout": false,
-    "zenMode.hideTabs": false
+    "zenMode.hideTabs": false,
+    "gitlens.views.repositories.files.layout": "list",
+    "files.autoSave": "off",
+    "showGitMetrics": true,
+    "showMusicMetrics": true,
+    "showWeeklyRanking": true
 }
