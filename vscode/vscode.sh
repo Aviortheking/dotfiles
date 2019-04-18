@@ -1,22 +1,20 @@
 #!/bin/bash
 
-C_WHITE="\033[38;5;15m"
 NO_FORMAT="\033[0m"
 C_BLUE="\033[38;5;12m"
 C_GREEN="\033[38;5;2m"
 
 path="$(dirname $0)"
 
-possible=("vscodium" "vscode" "code")
-possibleFolder=("VSCodium" "VSCode" "Code")
+possible=("vscodium" "code")
+possibleFolder=("VSCodium" "Code")
 ossFolder="Code - OSS" # just in case it's used
 vs=()
 vsFolder=()
 touse="null"
 touseFolder="null"
 
-for index in ${!possible[*]}
-do
+for index in ${!possible[*]}; do
 	which ${possible[$index]} > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		vs+=(${possible[$index]})
@@ -85,9 +83,11 @@ function save {
 	echo -en "Saving VSCode Extensions [${C_BLUE}¤${NO_FORMAT}]"
 
 	$vscode --list-extensions > $path/$extensionsFile
-	echo -e "\rSaving VSCode Extensions [${C_GREEN}+${NO_FORMAT}]"
+
+	echo -e "Saving VSCode Extensions [${C_GREEN}+${NO_FORMAT}]"
 	echo -en "Saving VSCode Settings [${C_BLUE}¤${NO_FORMAT}]"
 
+	cp $conf/settings.json $path/settings.json
 
 	if [ -d "$conf/snippets/" ]; then
 
