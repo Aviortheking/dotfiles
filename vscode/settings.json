@@ -46,7 +46,13 @@
             "twig",
             "html"
         ],
-        "*.svg": "html"
+        "*.svg": "html",
+        "*.html.twig": "html",
+        "*.xml.twig": [
+            "xml",
+            "html",
+            "twig"
+        ]
     },
     "files.exclude": {
         "**/.DS_Store": false
@@ -171,5 +177,6 @@
     "files.autoSave": "off",
     "showGitMetrics": true,
     "showMusicMetrics": true,
-    "showWeeklyRanking": true
+    "showWeeklyRanking": true,
+    "git.confirmSync": false
 }

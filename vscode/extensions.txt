@@ -2,6 +2,7 @@ acidic9.p5js-snippets
 akamud.vscode-theme-onelight
 Alan.stylus
 bmewburn.vscode-intelephense-client
+breezelin.phpstan
 codezombiech.gitignore
 Compulim.compulim-vscode-closetag
 corpsyal.coffee-auto-indent
@@ -18,6 +19,7 @@ felixfbecker.php-intellisense
 formulahendry.auto-rename-tag
 HookyQR.beautify
 icrawl.discord-vscode
+IJustDev.gitea-vscode
 ikappas.composer
 ikappas.phpcs
 ithildir.java-properties
@@ -35,7 +37,7 @@ redhat.java
 redhat.vscode-yaml
 riussi.code-stats-vscode
 robinbentley.sass-indented
-softwaredotcom.swdc-vscode
+shd101wyy.markdown-preview-enhanced
 sohibe.java-generate-setters-getters
 taniarascia.new-moon-vscode
 TheNouillet.symfony-vscode
