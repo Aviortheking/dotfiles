@@ -5,7 +5,6 @@ C_BLUE="\033[38;5;12m"
 C_GREEN="\033[38;5;2m"
 
 path="$(dirname $0)"
-nanorc="$HOME/.nanorc"
 
 command=$*
 
@@ -25,18 +24,18 @@ fi
 # save config
 ###
 function save {
-	echo -en "\rSaving Example config [${C_BLUE}¤${NO_FORMAT}]"
+	echo -en "Saving Example config [${C_BLUE}¤${NO_FORMAT}]"
 
-	echo -en "\rSaving Example config [${C_GREEN}+${NO_FORMAT}]\n"
+	echo -e "\rSaving Example config [${C_GREEN}+${NO_FORMAT}]"
 }
 
 ###
 # save config
 ###
 function load {
-	echo -en "\rLoading Example config [${C_BLUE}¤${NO_FORMAT}]"
+	echo -en "Loading Example config [${C_BLUE}¤${NO_FORMAT}]"
 
-	echo -en "\rLoading Example config [${C_GREEN}+${NO_FORMAT}]\n"
+	echo -e "\rLoading Example config [${C_GREEN}+${NO_FORMAT}]"
 }
 
 function install {
