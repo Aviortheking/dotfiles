@@ -29,12 +29,12 @@ mellena1.eclipse-new-java-project
 mrmlnc.vscode-apache
 ms-python.python
 ms-vsliveshare.vsliveshare
-naco-siren.gradle-language
 naumovs.color-highlight
 neilbrayfield.php-docblocker
 nickdodd79.gulptasks
 redhat.java
 redhat.vscode-yaml
+richie5um2.vscode-sort-json
 riussi.code-stats-vscode
 robinbentley.sass-indented
 shd101wyy.markdown-preview-enhanced

@@ -1,4 +1,10 @@
 {
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
     "breadcrumbs.enabled": true,
     "codestats.apikey": "SFMyNTY.UVhacGIzSjBhR1ZyYVc1biMjTmpVNQ.q3xB0NT-WfD1Wa10NKpvEuRI9RE3kICfOgj3JsyFAPM",
     "codestats.username": "Aviortheking",
@@ -31,29 +37,30 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
     "emmet.includeLanguages": {
+        "html.twig": "html",
         "njk": "html",
         "svg": "html",
         "twig": "html",
-        "html.twig": "html",
         "xml.twig": "xml"
     },
     "explorer.sortOrder": "type",
     "extensions.closeExtensionDetailsOnViewChange": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
+        "*.html.twig": "html",
         "*.lock": "json",
         "*.njk": [
             "twig",
             "html"
         ],
         "*.svg": "html",
-        "*.html.twig": "html",
         "*.xml.twig": [
             "xml",
             "html",
             "twig"
         ]
     },
+    "files.autoSave": "off",
     "files.exclude": {
         "**/.DS_Store": false
     },
@@ -71,7 +78,11 @@
         "**/vendor/**": true
     },
     "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": true,
     "git.enableSmartCommit": true,
+    "gitlens.blame.toggleMode": "window",
+    "gitlens.heatmap.toggleMode": "window",
     "gitlens.menus": {
         "editor": {
             "blame": false,
@@ -105,9 +116,16 @@
         }
     },
     "gitlens.mode.statusBar.enabled": false,
+    "gitlens.recentChanges.toggleMode": "window",
     "gitlens.statusBar.alignment": "left",
     "gitlens.views.compare.enabled": false,
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.repositories.location": "scm",
     "gitlens.views.search.enabled": false,
+    "gitlens.views.search.location": "scm",
     "grunt.autoDetect": "off",
     "gulp.autoDetect": "off",
     "java.completion.guessMethodArguments": true,
@@ -136,6 +154,9 @@
     "php.validate.run": "onType",
     "search.showLineNumbers": true,
     "search.smartCase": true,
+    "showGitMetrics": true,
+    "showMusicMetrics": true,
+    "showWeeklyRanking": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.enableBell": true,
@@ -172,11 +193,5 @@
     "yaml.format.enable": true,
     "yaml.format.singleQuote": true,
     "zenMode.centerLayout": false,
-    "zenMode.hideTabs": false,
-    "gitlens.views.repositories.files.layout": "list",
-    "files.autoSave": "off",
-    "showGitMetrics": true,
-    "showMusicMetrics": true,
-    "showWeeklyRanking": true,
-    "git.confirmSync": false
+    "zenMode.hideTabs": false
 }
