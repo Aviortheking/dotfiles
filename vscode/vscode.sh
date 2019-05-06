@@ -98,7 +98,7 @@ function save {
 		cp $conf/snippets/*.json $path/snippets/
 	fi
 
-	echo -e "\rSaving VSCode Settings [${C_GREEN}+${NO_FORMAT}]\n"
+	echo -e "\rSaving VSCode Settings [${C_GREEN}+${NO_FORMAT}]"
 }
 
 ###
