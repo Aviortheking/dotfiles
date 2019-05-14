@@ -1,6 +1,7 @@
 acidic9.p5js-snippets
 akamud.vscode-theme-onelight
 Alan.stylus
+bierner.emojisense
 bmewburn.vscode-intelephense-client
 breezelin.phpstan
 codezombiech.gitignore
@@ -13,6 +14,7 @@ diniremix.vscode-coffeescript-snippets
 DotJoshJohnson.xml
 drewbarrett.vscode-coffeescript-preview
 eamodio.gitlens
+ecodes.vscode-phpmd
 EditorConfig.EditorConfig
 felixfbecker.php-debug
 felixfbecker.php-intellisense
@@ -24,10 +26,12 @@ ikappas.composer
 ikappas.phpcs
 ithildir.java-properties
 jasonlhy.vscode-browser-sync
+linyang95.phpmd
 mblode.twig-language-2
 mellena1.eclipse-new-java-project
 mrmlnc.vscode-apache
 ms-python.python
+ms-vscode.Go
 ms-vsliveshare.vsliveshare
 naumovs.color-highlight
 neilbrayfield.php-docblocker

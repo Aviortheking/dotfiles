@@ -24,6 +24,7 @@
     "discord.workspaceElapsedTime": true,
     "editor.cursorBlinking": "phase",
     "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
@@ -44,6 +45,8 @@
         "xml.twig": "xml"
     },
     "explorer.sortOrder": "type",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
     "extensions.closeExtensionDetailsOnViewChange": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
@@ -58,7 +61,8 @@
             "xml",
             "html",
             "twig"
-        ]
+        ],
+        "yarn.lock": "yaml"
     },
     "files.autoSave": "off",
     "files.exclude": {
@@ -152,6 +156,7 @@
     "php.executablePath": "/usr/bin/php",
     "php.validate.executablePath": "/usr/bin/php",
     "php.validate.run": "onType",
+    "phpmd.validate.rulesets": "codesize,controversial,design,naming,unusedcode",
     "search.showLineNumbers": true,
     "search.smartCase": true,
     "showGitMetrics": true,
@@ -176,6 +181,9 @@
         "**/*.pug"
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
     "vsicons.presets.hideExplorerArrows": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.closeWhenEmpty": true,
@@ -185,6 +193,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.sideBar.location": "left",
     "workbench.statusBar.feedback.visible": false,
     "workbench.tree.indent": 20,
