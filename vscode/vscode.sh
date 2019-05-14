@@ -88,6 +88,7 @@ function save {
 	echo -en "Saving VSCode Settings [${C_BLUE}¤${NO_FORMAT}]"
 
 	cp $conf/settings.json $path/settings.json
+	cp $conf/keybindings.json $path/keybindings.json
 
 	if [ -d "$conf/snippets/" ]; then
 
@@ -102,7 +103,7 @@ function save {
 }
 
 ###
-# save config
+# load config
 ###
 function load {
 	echo -e "Loading VSCode Extensions [${C_BLUE}¤${NO_FORMAT}]"
@@ -115,6 +116,7 @@ function load {
 	echo -en "Loading VSCode Settings [${C_BLUE}¤${NO_FORMAT}]"
 
 	cp $path/settings.json $conf/settings.json
+	cp $path/keybindings.json $conf/keybindings.json
 
 	if [ -d "$path/snippets/" ]; then
 		if [ ! -d "$conf/snippets/" ]; then
