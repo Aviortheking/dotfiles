@@ -8,18 +8,21 @@ scripts=(
 	"fish"
 )
 
+path="$(dirname $0)"
+
+
 function save {
 	# save
 	for item in ${scripts[*]}
 	do
-		$item/$item.sh save
+		$path/$item/$item.sh save
 	done
 }
 
 function load {
 	for item in ${scripts[*]}
 	do
-		$item/$item.sh load
+		$path/$item/$item.sh load
 	done
 }
 
