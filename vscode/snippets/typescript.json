@@ -16,7 +16,7 @@
 		"prefix": "getter",
 		"body": [
 			"public get ${1:value}(): ${2:string} {",
-			"\treturn this._${1:value};",
+			"\treturn this._${1:value}",
 			"}",
 			"$0"
 		]
@@ -25,7 +25,7 @@
 		"prefix": "setter",
 		"body": [
 			"public set ${1:value}(v: ${2:string}) {",
-			"\tthis._${1:value} = v;",
+			"\tthis._${1:value} = v",
 			"}",
 			"$0"
 		]

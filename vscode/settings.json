@@ -13,7 +13,7 @@
     "debug.inlineValues": true,
     "debug.internalConsoleOptions": "neverOpen",
     "debug.openDebug": "neverOpen",
-    "debug.toolBarLocation": "docked",
+    "debug.toolBarLocation": "floating",
     "discord.detailsDebugging": "Debugging {workspace}",
     "discord.detailsIdle": "{null}",
     "discord.largeImage": "Editing a {lang} file",
@@ -23,14 +23,12 @@
     "discord.lowerDetailsNotFound": "Line: {currentline} on {totallines}",
     "discord.workspaceElapsedTime": true,
     "editor.cursorBlinking": "phase",
-    "editor.cursorStyle": "block",
-    "editor.detectIndentation": false,
+	"editor.cursorStyle": "block",
     "editor.dragAndDrop": false,
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "editor.fontWeight": "bold",
-    "editor.insertSpaces": false,
     "editor.lineNumbers": "interval",
     "editor.parameterHints.cycle": true,
     "editor.renderWhitespace": "boundary",
@@ -44,13 +42,14 @@
         "twig": "html",
         "xml.twig": "xml"
     },
+    "java.home": "/usr/lib/jvm/java-8-openjdk/",
     "explorer.sortOrder": "type",
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
     "extensions.closeExtensionDetailsOnViewChange": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
-        "*.html.twig": "html",
+        "*.html.twig": "twig",
         "*.lock": "json",
         "*.njk": [
             "twig",
@@ -65,12 +64,6 @@
         "yarn.lock": "yaml"
     },
     "files.autoSave": "off",
-    "files.exclude": {
-        "**/.DS_Store": false
-    },
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
     "files.watcherExclude": {
         "**/bin/**": true,
         "**/config/**": true,
@@ -141,7 +134,6 @@
     "java.saveActions.organizeImports": true,
     "java.signatureHelp.enabled": true,
     "java.trace.server": "messages",
-    "maven.view": "hierarchical",
     "merge-conflict.autoNavigateNextConflict.enabled": true,
     "npm.enableScriptExplorer": true,
     "npm.exclude": [
@@ -184,7 +176,6 @@
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "none",
     "update.showReleaseNotes": false,
-    "vsicons.presets.hideExplorerArrows": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.closeWhenEmpty": true,
     "window.titleBarStyle": "custom",
@@ -202,5 +193,31 @@
     "yaml.format.enable": true,
     "yaml.format.singleQuote": true,
     "zenMode.centerLayout": false,
-    "zenMode.hideTabs": false
+	"zenMode.hideTabs": false,
+	"terminal.integrated.rendererType": "dom",
+    "workbench.statusBar.visible": true,
+    "emojisense.languages": {
+        "markdown": true,
+        "plaintext": {
+          "markupCompletionsEnabled": false,
+          "emojiDecoratorsEnabled": false
+        },
+        "git-commit": true,
+        "jade": true,
+        "go": true
+    },
+    "editor.renderControlCharacters": false,
+    "diffEditor.renderSideBySide": true,
+    "editor.detectIndentation": false,
+    "files.trimFinalNewlines": true,
+    "vscode-mysql.enableTelemetry": false,
+    "eslint.packageManager": "yarn",
+    "eslint.provideLintTask": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "maven.terminal.useJavaHome": true
 }
