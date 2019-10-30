@@ -6,8 +6,8 @@ C_GREEN="\033[38;5;2m"
 
 path="$(dirname $0)"
 
-possible=("vscodium" "code")
-possibleFolder=("VSCodium" "Code")
+possible=("vscodium" "code" "codium")
+possibleFolder=("VSCodium" "Code" "VSCodium")
 ossFolder="Code - OSS" # just in case it's used
 vs=()
 vsFolder=()

@@ -29,5 +29,19 @@
 			"}",
 			"$0"
 		]
+	},
+	"getset": {
+		"prefix": ["setget", "getset"],
+		"body": [
+			"private _${1:value}: ${2:string}",
+			"public set ${1:value}(v: ${2:string}) {",
+			"\tthis._${1:value} = v",
+			"}",
+			"public get ${1:value}(): ${2:string} {",
+			"\treturn this._${1:value}",
+			"}",
+			"$0"
+		],
+		"description": "Set the Getter AND the Setter with the variable"
 	}
 }
