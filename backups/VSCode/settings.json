@@ -35,6 +35,7 @@
     "editor.suggest.localityBonus": true,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
+    "languageStylus.useSeparator": false,
     "emmet.includeLanguages": {
         "html.twig": "html",
         "njk": "html",
@@ -57,9 +58,9 @@
         ],
         "*.svg": "html",
         "*.xml.twig": [
+            "twig",
             "xml",
-            "html",
-            "twig"
+            "html"
         ],
         "yarn.lock": "yaml"
     },
@@ -180,7 +181,6 @@
     "window.closeWhenEmpty": true,
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "New Moon",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "vscode-icons",
@@ -204,9 +204,13 @@
         },
         "git-commit": true,
         "jade": true,
-        "go": true
+        "go": true,
+        "twig": true,
+        "typescriptreact": true,
+        "typescript": true,
+        "javascriptreact": true,
     },
-    "editor.renderControlCharacters": false,
+    "editor.renderControlCharacters": true,
     "diffEditor.renderSideBySide": true,
     "editor.detectIndentation": false,
     "files.trimFinalNewlines": true,
@@ -219,5 +223,11 @@
         "typescript",
         "typescriptreact"
     ],
-    "maven.terminal.useJavaHome": true
+    "maven.terminal.useJavaHome": true,
+    "workbench.colorTheme": "New Moon",
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "git.alwaysSignOff": true,
+    "liveshare.featureSet": "insiders"
 }

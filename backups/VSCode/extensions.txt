@@ -2,6 +2,7 @@ acidic9.p5js-snippets
 akamud.vscode-theme-onelight
 ark120202.vscode-typescript-pnp-plugin
 bierner.emojisense
+blanu.vscode-styled-jsx
 bmewburn.vscode-intelephense-client
 breezelin.phpstan
 codezombiech.gitignore
@@ -10,6 +11,7 @@ corpsyal.coffee-auto-indent
 cssho.vscode-svgviewer
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
+DiemasMichiels.emulate
 diniremix.vscode-coffeescript-snippets
 DotJoshJohnson.xml
 drewbarrett.vscode-coffeescript-preview
@@ -55,7 +57,6 @@ sensourceinc.vscode-sql-beautify
 shakram02.bash-beautify
 shd101wyy.markdown-preview-enhanced
 sohibe.java-generate-setters-getters
-steoates.autoimport
 syler.sass-indented
 sysoev.language-stylus
 taniarascia.new-moon-vscode
