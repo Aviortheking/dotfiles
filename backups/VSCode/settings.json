@@ -2,18 +2,21 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
     "[jsonc]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "breadcrumbs.enabled": true,
     "codestats.apikey": "SFMyNTY.UVhacGIzSjBhR1ZyYVc1biMjTmpVNQ.q3xB0NT-WfD1Wa10NKpvEuRI9RE3kICfOgj3JsyFAPM",
     "codestats.username": "Aviortheking",
-    "debug.console.fontFamily": "'Fira Code'",
     "debug.console.fontSize": 18,
     "debug.inlineValues": true,
     "debug.internalConsoleOptions": "neverOpen",
     "debug.openDebug": "neverOpen",
     "debug.toolBarLocation": "floating",
+    "diffEditor.renderSideBySide": true,
     "discord.detailsDebugging": "Debugging {workspace}",
     "discord.detailsIdle": "{null}",
     "discord.largeImage": "Editing a {lang} file",
@@ -23,7 +26,8 @@
     "discord.lowerDetailsNotFound": "Line: {currentline} on {totallines}",
     "discord.workspaceElapsedTime": true,
     "editor.cursorBlinking": "phase",
-	"editor.cursorStyle": "block",
+    "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
@@ -31,11 +35,11 @@
     "editor.fontWeight": "bold",
     "editor.lineNumbers": "interval",
     "editor.parameterHints.cycle": true,
+    "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "boundary",
     "editor.suggest.localityBonus": true,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
-    "languageStylus.useSeparator": false,
     "emmet.includeLanguages": {
         "html.twig": "html",
         "njk": "html",
@@ -43,7 +47,28 @@
         "twig": "html",
         "xml.twig": "xml"
     },
-    "java.home": "/usr/lib/jvm/java-8-openjdk/",
+    "emojisense.languages": {
+        "git-commit": true,
+        "go": true,
+        "jade": true,
+        "javascriptreact": true,
+        "markdown": true,
+        "plaintext": {
+            "emojiDecoratorsEnabled": false,
+            "markupCompletionsEnabled": false
+        },
+        "twig": true,
+        "typescript": true,
+        "typescriptreact": true
+    },
+    "eslint.packageManager": "yarn",
+    "eslint.provideLintTask": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
     "explorer.sortOrder": "type",
     "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
@@ -65,6 +90,7 @@
         "yarn.lock": "yaml"
     },
     "files.autoSave": "off",
+    "files.trimFinalNewlines": true,
     "files.watcherExclude": {
         "**/bin/**": true,
         "**/config/**": true,
@@ -75,6 +101,7 @@
         "**/var/**": true,
         "**/vendor/**": true
     },
+    "git.alwaysSignOff": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
@@ -130,11 +157,15 @@
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.dependency.packagePresentation": "hierarchical",
+    "java.home": "/usr/lib/jvm/java-8-openjdk/",
     "java.implementationsCodeLens.enabled": true,
     "java.referencesCodeLens.enabled": true,
     "java.saveActions.organizeImports": true,
     "java.signatureHelp.enabled": true,
     "java.trace.server": "messages",
+    "languageStylus.useSeparator": false,
+    "liveshare.featureSet": "insiders",
+    "maven.terminal.useJavaHome": true,
     "merge-conflict.autoNavigateNextConflict.enabled": true,
     "npm.enableScriptExplorer": true,
     "npm.exclude": [
@@ -161,6 +192,7 @@
     "terminal.integrated.fontFamily": "'Fira Code'",
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.rendererType": "dom",
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
@@ -177,57 +209,28 @@
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "none",
     "update.showReleaseNotes": false,
+    "vscode-mysql.enableTelemetry": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.closeWhenEmpty": true,
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
+    "workbench.colorTheme": "New Moon",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.sideBar.location": "left",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.tree.indent": 20,
     "workbench.useExperimentalGridLayout": true,
     "workbench.view.alwaysShowHeaderActions": true,
     "yaml.format.enable": true,
     "yaml.format.singleQuote": true,
     "zenMode.centerLayout": false,
-	"zenMode.hideTabs": false,
-	"terminal.integrated.rendererType": "dom",
-    "workbench.statusBar.visible": true,
-    "emojisense.languages": {
-        "markdown": true,
-        "plaintext": {
-          "markupCompletionsEnabled": false,
-          "emojiDecoratorsEnabled": false
-        },
-        "git-commit": true,
-        "jade": true,
-        "go": true,
-        "twig": true,
-        "typescriptreact": true,
-        "typescript": true,
-        "javascriptreact": true,
-    },
-    "editor.renderControlCharacters": true,
-    "diffEditor.renderSideBySide": true,
-    "editor.detectIndentation": false,
-    "files.trimFinalNewlines": true,
-    "vscode-mysql.enableTelemetry": false,
-    "eslint.packageManager": "yarn",
-    "eslint.provideLintTask": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "maven.terminal.useJavaHome": true,
-    "workbench.colorTheme": "New Moon",
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "git.alwaysSignOff": true,
-    "liveshare.featureSet": "insiders"
+    "zenMode.hideTabs": false,
+    "debug.console.fontFamily": "'monospace'",
+    "projectManager.git.baseFolders": [
+    "$home/git"
+    ]
 }
