@@ -9,7 +9,7 @@
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "breadcrumbs.enabled": true,
-    "codestats.apikey": "SFMyNTY.UVhacGIzSjBhR1ZyYVc1biMjTmpVNQ.q3xB0NT-WfD1Wa10NKpvEuRI9RE3kICfOgj3JsyFAPM",
+    "codestats.apikey": "SFMyNTY.UVhacGIzSjBhR1ZyYVc1biMjTVRRNU1BPT0.O5ZTVwz66SmInkAGVfXJxIxbX7H6pp1GJS8ULUNQwLg",
     "codestats.username": "Aviortheking",
     "debug.console.fontSize": 18,
     "debug.inlineValues": true,
@@ -71,7 +71,7 @@
     ],
     "explorer.sortOrder": "type",
     "extensions.autoCheckUpdates": false,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": true,
     "extensions.closeExtensionDetailsOnViewChange": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
@@ -101,7 +101,6 @@
         "**/var/**": true,
         "**/vendor/**": true
     },
-    "git.alwaysSignOff": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
@@ -157,7 +156,7 @@
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.dependency.packagePresentation": "hierarchical",
-    "java.home": "/usr/lib/jvm/java-8-openjdk/",
+    "java.home": "/usr/lib/jvm/java-14-openjdk/",
     "java.implementationsCodeLens.enabled": true,
     "java.referencesCodeLens.enabled": true,
     "java.saveActions.organizeImports": true,
@@ -232,5 +231,12 @@
     "debug.console.fontFamily": "'monospace'",
     "projectManager.git.baseFolders": [
     "$home/git"
-    ]
+    ],
+    "git.alwaysSignOff": true,
+    "java.semanticHighlighting.enabled": true,
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.insertSpaces": false
 }
