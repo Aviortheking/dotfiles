@@ -1,0 +1,24 @@
+# Global cache
+**/Cache/**
+**/cache/**
+
+###############
+# LibreOffice #
+###############
+
+# remove backup files
+dotfiles/.config/libreoffice/*/user/backup
+
+###############
+# PrusaSlicer #
+###############
+
+# remove unnecessary snapshots
+dotfiles/.config/PrusaSlicer/snapshots/*
+
+#############
+# FileZilla #
+#############
+
+# contains ftp servers credentials
+dotfiles/.config/filezilla/filezilla.xml

@@ -1,0 +1,16 @@
+[global_config]
+  geometry_hinting = True
+  always_split_with_profile = True
+  disable_mouse_paste = True
+[keybindings]
+[profiles]
+  [[default]]
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

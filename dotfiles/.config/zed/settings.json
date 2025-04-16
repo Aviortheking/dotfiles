@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+	"active_pane_modifiers": {
+		"inactive_opacity": 0.8
+	},
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "Adwaita Pastel Dark"
+	},
+	"base_keymap": "VSCode",
+	"buffer_font_family": "Fira Code",
+	"tab_bar": {
+		"show": true
+	},
+	"autosave": "off",
+	"format_on_save": "off",
+	"buffer_font_weight": 400,
+	"buffer_font_features": {
+		"calt": true
+	},
+	"tabs": {
+		"file_icons": true,
+		"git_status": true
+	},
+	"git": {
+		"git_gutter": "tracked_files",
+		"inline_blame": {
+			"enabled": true
+		}
+	},
+	"indent_guides": {
+		"enabled": true,
+		"line_width": 1,
+		"active_line_width": 2,
+		"coloring": "indent_aware"
+	},
+	"hard_tabs": true,
+	"inlay_hints": {
+		"enabled": false,
+		"show_type_hints": true,
+		"show_other_hints": true,
+		"show_parameter_hints": true
+	},
+	"preferred_line_length": 120,
+	"project_online_by_default": false,
+	"show_whitespaces": "boundary",
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"project_panel": {
+		"dock": "right",
+		"indent_size": 30
+	},
+	"assistant": {
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-3-5-sonnet-latest"
+		},
+		"version": "2",
+		"provider": null
+	},
+	"show_call_status_icon": false,
+	"chat_panel": {
+		"button": false
+	},
+	"tab_size": 4,
+	"collaboration_panel": {
+		"button": false
+	},
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"classAttributes": ["class", "className", "ngClass", "styles"]
+			}
+		}
+	},
+	"languages": {
+		"Python": {
+			"format_on_save": { "language_server": { "name": "ruff" } },
+			"formatter": { "language_server": { "name": "ruff" } },
+			"language_servers": ["pyright", "ruff"]
+		}
+	},
+	"terminal": {
+		"env": {
+			// Use zed as the commit editor
+			"EDITOR": "zeditor --wait"
+		}
+	}
+}
