@@ -1,6 +1,14 @@
 # Global cache
 **/Cache/**
 **/cache/**
+**.cache
+
+# log files
+**.log
+**.log.*
+
+# tmp files
+*tmp*
 
 ###############
 # LibreOffice #
@@ -22,3 +30,17 @@ dotfiles/.config/PrusaSlicer/snapshots/*
 
 # contains ftp servers credentials
 dotfiles/.config/filezilla/filezilla.xml
+
+###########
+# Blender #
+###########
+
+# ignore recent files
+dotfiles/.config/blender/*/config/recent-files.txt
+
+##########
+# VSCode #
+##########
+
+# settings contains private keys
+dotfiles/.config/Code/User/settings.json

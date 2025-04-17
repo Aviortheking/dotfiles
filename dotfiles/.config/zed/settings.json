@@ -10,12 +10,27 @@
 	"active_pane_modifiers": {
 		"inactive_opacity": 0.8
 	},
+	"icon_theme": "VSCode Icons (Dark)",
+	"features": {
+		"edit_prediction_provider": "none"
+	},
+	"git_panel": {
+		"status_style": "label_color"
+	},
+	"middle_click_paste": false,
+	"assistant": {
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-3-5-sonnet-latest"
+		},
+		"version": "2"
+	},
 	"ui_font_size": 16,
 	"buffer_font_size": 16,
 	"theme": {
 		"mode": "system",
 		"light": "One Light",
-		"dark": "Adwaita Pastel Dark"
+		"dark": "Catppuccin Frappé"
 	},
 	"base_keymap": "VSCode",
 	"buffer_font_family": "Fira Code",
@@ -23,7 +38,7 @@
 		"show": true
 	},
 	"autosave": "off",
-	"format_on_save": "off",
+	"format_on_save": "language_server",
 	"buffer_font_weight": 400,
 	"buffer_font_features": {
 		"calt": true
@@ -46,10 +61,10 @@
 	},
 	"hard_tabs": true,
 	"inlay_hints": {
-		"enabled": false,
+		"enabled": true,
 		"show_type_hints": true,
 		"show_other_hints": true,
-		"show_parameter_hints": true
+		"show_parameter_hints": false
 	},
 	"preferred_line_length": 120,
 	"project_online_by_default": false,
@@ -62,18 +77,13 @@
 		"dock": "right",
 		"indent_size": 30
 	},
-	"assistant": {
-		"default_model": {
-			"provider": "zed.dev",
-			"model": "claude-3-5-sonnet-latest"
-		},
-		"version": "2",
-		"provider": null
-	},
 	"show_call_status_icon": false,
 	"chat_panel": {
-		"button": false
+		"button": "never"
 	},
+	"show_user_picture": false,
+	"auto_indent_on_paste": true,
+	"extend_comment_on_newline": false,
 	"tab_size": 4,
 	"collaboration_panel": {
 		"button": false
@@ -81,21 +91,79 @@
 	"lsp": {
 		"tailwindcss-language-server": {
 			"settings": {
-				"classAttributes": ["class", "className", "ngClass", "styles"]
+				"classAttributes": [
+					"class",
+					"className",
+					"ngClass",
+					"styles"
+				]
 			}
 		}
 	},
 	"languages": {
+		"Astro": {
+			"language_servers": [
+				"eslint",
+				"..."
+			]
+		},
 		"Python": {
-			"format_on_save": { "language_server": { "name": "ruff" } },
-			"formatter": { "language_server": { "name": "ruff" } },
-			"language_servers": ["pyright", "ruff"]
+			"format_on_save": {
+				"language_server": {
+					"name": "ruff"
+				}
+			},
+			"formatter": {
+				"language_server": {
+					"name": "ruff"
+				}
+			},
+			"language_servers": [
+				"pyright",
+				"ruff"
+			]
+		},
+		"TypeScript": {
+			"inlay_hints": {
+				"show_parameter_hints": false
+			},
+			"format_on_save": "on",
+			"code_actions_on_format": {
+				"source.organizeImports": true,
+				"source.fixAll.eslint": true
+			},
+			"formatter": "language_server"
+		},
+		"PHP": {
+			"hard_tabs": false
+		},
+		"JavaScript": {
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true
+			}
+		},
+		"TSX": {
+			"format_on_save": "off",
+			"code_actions_on_format": {
+				"source.organizeImports": true,
+				"source.fixAll.eslint": true
+			}
 		}
+	},
+	"eslint": {
+		"enabled": true,
+		"autoFixOnSave": true,
+		"autoFixOnFormat": true,
+		"autoFixOnFormatDelay": 1500
 	},
 	"terminal": {
 		"env": {
 			// Use zed as the commit editor
 			"EDITOR": "zeditor --wait"
+		},
+		// Disable the ugly directory infos
+		"toolbar": {
+			"breadcrumbs": false
 		}
 	}
 }

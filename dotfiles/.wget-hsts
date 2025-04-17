@@ -1,0 +1,5 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+cdn.builder.blender.org	0	0	1722521765	63072000
+builder.blender.org	0	0	1722521765	63072000

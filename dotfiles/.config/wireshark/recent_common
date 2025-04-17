@@ -1,12 +1,13 @@
-# Recent settings file for Wireshark 2.6.20.
+# Common recent settings file for Wireshark 4.4.3.
 #
-# This file is regenerated each time Wireshark is quit.
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
 # So be careful, if you want to make manual changes here.
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
 
-######## Recent capture filters (latest last), cannot be altered through command line ########
+######## Recent capture filters (latest first), cannot be altered through command line ########
 
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
@@ -14,40 +15,70 @@
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 20
-gui.geometry_main_y: 20
-gui.gtk.geometry_main_x: 2969
-gui.gtk.geometry_main_y: 585
-gui.geometry_main_width: 750
-gui.geometry_main_height: 550
+gui.geometry_main_x: 2549
+gui.geometry_main_y: 791
+gui.geometry_main_width: 1061
+gui.geometry_main_height: 906
 
 # Main window maximized.
-# TRUE or FALSE (case-insensitive).
-gui.geometry_main_maximized: FALSE
+# true or false (case-insensitive).
+gui.geometry_main_maximized: false
 
-# Statusbar left pane size.
-# Decimal number.
-gui.geometry_status_pane: 250
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb00030000000009f50000031700000e2f000006dc00000a000000034800000e24000006d1000000010000000006a800000a000000034800000e24000006d1
 
-# Statusbar middle pane size.
-# Decimal number.
-gui.geometry_status_pane_right: 250
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
 
 # Last used Configuration Profile.
 gui.last_used_profile: Default
 
-# WLAN statistics upper pane size.
-# Decimal number.
-gui.geometry_status_wlan_stats_pane: 200
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
 
 # Warn if running with elevated permissions (e.g. as root).
-# TRUE or FALSE (case-insensitive).
-privs.warn_if_elevated: TRUE
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
 
-# Warn if npf.sys isn't loaded on Windows >= 6.0.
-# TRUE or FALSE (case-insensitive).
-privs.warn_if_no_npf: TRUE
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.
 gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

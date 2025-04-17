@@ -1,0 +1,1 @@
+{AMD/AMD Radeon RX 7700S (radeonsi, navi33, LLVM 18.1.8, DRM 3.57, 6.10.10-arch1-1)/4.6 (Core Profile) Mesa 24.2.2-arch1.1}=SUPPORTED
